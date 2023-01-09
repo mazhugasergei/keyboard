@@ -23,14 +23,14 @@ function App() {
     sound.currentTime = 0
     sound.play()
     key.querySelector('.text').style.transform = "scale(.98)"
-    key.style.height = key.offsetHeight - 4 + "px"
-    key.style.minWidth = key.offsetWidth - 4 + "px"
+    key.style.height = "194px"
+    key.style.minWidth = "194px"
     key.style.margin = "2px"
   }
   const keyUp = key => {
     key.querySelector('.text').style.transform = "scale(1)"
-    key.style.height = key.offsetHeight + 4 + "px"
-    key.style.minWidth = key.offsetWidth + 4 + "px"
+    key.style.height = "198px"
+    key.style.minWidth = "198px"
     key.style.margin = 0
   }
 
