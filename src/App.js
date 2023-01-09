@@ -52,7 +52,7 @@ function App() {
   }, [])
 
   return (
-    <>
+    <div className="container">
       <div className="keyboard">
         <div className="cont">
           {
@@ -72,7 +72,7 @@ function App() {
           }
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
