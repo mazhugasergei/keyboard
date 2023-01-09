@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/keyboard/static/css/main.d90e42d7.css",
-    "main.js": "/keyboard/static/js/main.7eb703e1.js",
+    "main.js": "/keyboard/static/js/main.dd374788.js",
     "index.html": "/keyboard/index.html",
     "main.d90e42d7.css.map": "/keyboard/static/css/main.d90e42d7.css.map",
-    "main.7eb703e1.js.map": "/keyboard/static/js/main.7eb703e1.js.map"
+    "main.dd374788.js.map": "/keyboard/static/js/main.dd374788.js.map"
   },
   "entrypoints": [
     "static/css/main.d90e42d7.css",
-    "static/js/main.7eb703e1.js"
+    "static/js/main.dd374788.js"
   ]
 }
