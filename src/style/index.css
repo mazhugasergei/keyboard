@@ -57,7 +57,7 @@ body {
   background: #fff;
   border-radius: 7px;
   box-shadow: inset 0px -8px 25px rgba(0, 0, 0, 0.25);
-  transition: 0s;
+  transition: 0.035s;
   padding: 10px 19px 28px;
 }
 .keyboard .row .key * {
@@ -79,7 +79,7 @@ body {
   font-size: 45px;
   font-weight: 500;
   color: #35343E;
-  transition: 0s;
+  transition: 0.035s;
 }
 .keyboard .row .key[data-key=Escape], .keyboard .row .key[data-key=Enter], .keyboard .row .key[data-key=Space], .keyboard .row .key[data-key=F5], .keyboard .row .key[data-key=F6], .keyboard .row .key[data-key=F7], .keyboard .row .key[data-key=F8], .keyboard .row .key[data-key=ArrowUp], .keyboard .row .key[data-key=ArrowLeft], .keyboard .row .key[data-key=ArrowDown], .keyboard .row .key[data-key=ArrowRight] {
   background: #F2D485;
