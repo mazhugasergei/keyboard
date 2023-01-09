@@ -81,33 +81,6 @@ body {
   color: #35343E;
   transition: 0s;
 }
-.keyboard .row .key[data-key=Backspace], .keyboard .row .key[data-key=ShiftLeft] {
-  min-width: 455px;
-}
-.keyboard .row .key[data-key=Tab] {
-  min-width: 301px;
-}
-.keyboard .row .key[data-key=Backslash] {
-  min-width: 352px;
-}
-.keyboard .row .key[data-key=CapsLock] {
-  min-width: 353px;
-}
-.keyboard .row .key[data-key=Enter] {
-  min-width: 502px;
-}
-.keyboard .row .key[data-key=ControlLeft] {
-  min-width: 239px;
-}
-.keyboard .row .key[data-key=Menu] {
-  min-width: 250px;
-}
-.keyboard .row .key[data-key=MetaLeft], .keyboard .row .key[data-key=AltLeft] {
-  min-width: 243px;
-}
-.keyboard .row .key[data-key=Space] {
-  min-width: 1282px;
-}
 .keyboard .row .key[data-key=Escape], .keyboard .row .key[data-key=Enter], .keyboard .row .key[data-key=Space], .keyboard .row .key[data-key=F5], .keyboard .row .key[data-key=F6], .keyboard .row .key[data-key=F7], .keyboard .row .key[data-key=F8], .keyboard .row .key[data-key=ArrowUp], .keyboard .row .key[data-key=ArrowLeft], .keyboard .row .key[data-key=ArrowDown], .keyboard .row .key[data-key=ArrowRight] {
   background: #F2D485;
 }

@@ -13,8 +13,15 @@ function App() {
     [ "Escape", "Digit1", "Digit2", "Digit3", "Digit4", "Digit5", "Digit6", "Digit7", "Digit8", "Digit9", "Digit0", "Minus", "Equal", "Backspace"],
     [ "Tab", "KeyQ", "KeyW", "KeyE", "KeyR", "KeyT", "KeyY", "KeyU", "KeyI", "KeyO", "KeyP", "BracketLeft", "BracketRight", "Backslash"],
     [ "CapsLock", "KeyA", "KeyS", "KeyD", "KeyF", "KeyG", "KeyH", "KeyJ", "KeyK", "KeyL", "Semicolon", "Quote", "Enter"],
-    [ "ShiftLeft", "KeyZ", "KeyX", "KeyC", "KeyV", "KeyB", "KeyN", "KeyM", "Comma", "Period", "Slash", "ShiftRight","ArrowUp", "Delete"],
+    [ "ShiftLeft", "KeyZ", "KeyX", "KeyC", "KeyV", "KeyB", "KeyN", "KeyM", "Comma", "Period", "Slash", "ShiftRight", "ArrowUp", "Delete"],
     [ "ControlLeft", "MetaLeft", "AltLeft", "Space", "Function", "Menu", "ArrowLeft", "ArrowDown", "ArrowRight" ]
+  ]
+  const keysSize = [
+    [ 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 455],
+    [ 301, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 352],
+    [ 353, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 502],
+    [ 455, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198],
+    [ 239, 243, 243, 1282, 198, 250, 198, 198, 198 ]
   ]
 
   const sound = new Audio('https://markuswedler.github.io/keyboard/assets/key.mp3')
@@ -24,13 +31,13 @@ function App() {
     sound.play()
     key.querySelector('.text').style.transform = "scale(.98)"
     key.style.height = "194px"
-    key.style.minWidth = "194px"
+    key.style.minWidth = key.dataset.size - 4 + "px"
     key.style.margin = "2px"
   }
   const keyUp = key => {
     key.querySelector('.text').style.transform = "scale(1)"
     key.style.height = "198px"
-    key.style.minWidth = "198px"
+    key.style.minWidth = key.dataset.size + "px"
     key.style.margin = 0
   }
 
@@ -60,7 +67,7 @@ function App() {
               <div className="row" key={i}>
                 {
                   row.map((key, j) => (
-                    <div className="key" data-key={keysCode[i][j]} key={i+"_"+j}>
+                    <div className="key" data-key={keysCode[i][j]} data-size={keysSize[i][j]} style={{ minWidth: keysSize[i][j] }} key={i+"_"+j}>
                       <div className="top">
                         <div className="text">{ key }</div>
                       </div>
