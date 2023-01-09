@@ -1,0 +1,89 @@
+.keyboard{
+  transform-origin: top left;
+  transform: scale(.3) translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  background: #f6f6f6;
+  border: 20px solid #f6f6f6;
+  border-radius: 12px;
+  box-shadow: 0 4px 200px rgb(#000, .2);
+  .cont{
+    display: inline-flex;
+    flex-flow: column;
+    gap: 4px;
+    background: #000;
+    border-radius: 9px;
+    padding: 4px;
+  }
+  .row{
+    display: flex;
+    gap: 4px;
+    &:first-child{
+      border-top-left-radius: 9px;
+      border-top-right-radius: 9px;
+    }
+    &:last-child{
+      border-bottom-left-radius: 9px;
+      border-bottom-right-radius: 9px;
+    }
+    .key{
+      *{ pointer-events: none; }
+      cursor: pointer;
+      min-width: 198px;
+      height: 198px;
+      background: #fff;
+      border-radius: 7px;
+      box-shadow: inset 0px -8px 25px rgb(#000, 0.25);
+      transition: $transition;
+      padding: 10px 19px 28px;
+      .top{
+        user-select: none;
+        display: grid;
+        place-items: center;
+        height: 100%;
+        border-radius: 41px;
+        text-transform: uppercase;
+        .text{
+          font-family: "Nunito", sans-serif;
+          font-size: 45px;
+          font-weight: 500;
+          color: #35343E;
+          transition: $transition;
+        }
+      }
+      // different width
+      &[data-key="Backspace"], &[data-key="ShiftLeft"]{ min-width: 455px; }
+      &[data-key="Tab"]{ min-width: 301px; }
+      &[data-key="Backslash"]{ min-width: 352px; }
+      &[data-key="CapsLock"]{ min-width: 353px; }
+      &[data-key="Enter"]{ min-width: 502px; }
+      &[data-key="ControlLeft"]{ min-width: 239px; }
+      &[data-key="Menu"]{ min-width: 250px; }
+      &[data-key="MetaLeft"], &[data-key="AltLeft"]{ min-width: 243px; }
+      &[data-key="Space"]{ min-width: 1282px; }
+      // primary color
+      &[data-key="Escape"], &[data-key="Enter"], &[data-key="Space"],
+      &[data-key="F5"], &[data-key="F6"], &[data-key="F7"], &[data-key="F8"],
+      &[data-key="ArrowUp"], &[data-key="ArrowLeft"], &[data-key="ArrowDown"], &[data-key="ArrowRight"]{
+          background: #F2D485;
+          .top{ background: #F8DB91; }
+      }
+      // 
+      &[data-key="BracketLeft"], &[data-key="BracketRight"], &[data-key="Backslash"], &[data-key="Semicolon"], &[data-key="Quote"], &[data-key="Comma"], &[data-key="Period"], &[data-key="Slash"]{
+        white-space: break-spaces;
+        text-align: center;
+      }
+      // bigger font
+      &[data-key="KeyQ"], &[data-key="KeyW"], &[data-key="KeyE"], &[data-key="KeyR"], &[data-key="KeyT"], &[data-key="KeyY"], &[data-key="KeyU"], &[data-key="KeyI"], &[data-key="KeyO"], &[data-key="P"],
+      &[data-key="KeyA"], &[data-key="KeyS"], &[data-key="KeyD"], &[data-key="KeyF"], &[data-key="KeyG"], &[data-key="KeyH"], &[data-key="KeyJ"], &[data-key="KeyK"], &[data-key="KeyL"],
+      &[data-key="KeyZ"], &[data-key="KeyX"], &[data-key="KeyC"], &[data-key="KeyV"], &[data-key="KeyB"], &[data-key="KeyN"], &[data-key="KeyM"]{
+        .text{
+          font-size: 70px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
