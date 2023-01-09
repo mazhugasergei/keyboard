@@ -25,7 +25,7 @@ function App() {
     key.querySelector('.text').style.transform = "scale(.98)"
     key.style.height = key.offsetHeight - 4 + "px"
     key.style.minWidth = key.offsetWidth - 4 + "px"
-    key.style.margin = "4px"
+    key.style.margin = "2px"
   }
   const keyUp = key => {
     key.querySelector('.text').style.transform = "scale(1)"
