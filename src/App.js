@@ -40,6 +40,7 @@ function App() {
     // animation on click
     keys.forEach(key => {
       key.addEventListener("mousedown", (e) => keyDown(e.target))
+      key.addEventListener("touchstart", (e) => keyDown(e.target))
       key.addEventListener("click", (e) => keyUp(e.target))
     })
     document.addEventListener("keydown", (e) => {
