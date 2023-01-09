@@ -17,7 +17,7 @@ function App() {
     [ "ControlLeft", "MetaLeft", "AltLeft", "Space", "Function", "Menu", "ArrowLeft", "ArrowDown", "ArrowRight" ]
   ]
 
-  const sound = new Audio('/assets/key.mp3')
+  const sound = new Audio('https://markuswedler.github.io/keyboard/assets/key.mp3')
 
   const keyDown = key => {
     sound.currentTime = 0
